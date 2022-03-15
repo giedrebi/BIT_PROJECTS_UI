@@ -58,3 +58,10 @@ a.menu:active {
     text-decoration: none;
     transition: 1s;
 }
+.row {
+    display: flex;
+}
+.row1 {
+    flex: 50%;
+    flex-wrap: wrap;
+}
