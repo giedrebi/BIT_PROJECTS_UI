@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    align-content: center;
+    background-image:
+        radial-gradient(at top left, #000000, transparent),
+        radial-gradient(at top right, #770b81, transparent),
+        radial-gradient(at bottom left, #0a030a, transparent);  
+    background-size: cover;
+    
+}
+.row {
+    display: flex;
+    margin: 10vh 0;
+    
+}
+.column {
+    flex: 50%;
+}
+.text {
+    text-align: center;
+}
+.text > h1 {
+    
+}
+#vrwomen {
+    width: 80%;
+}
