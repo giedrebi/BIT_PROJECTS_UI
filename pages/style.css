@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    background-image:
+        radial-gradient(at top left, #4d0064, transparent),
+        radial-gradient(at top right, #400846, transparent),
+        radial-gradient(at bottom right, #c037c0, transparent),
+        radial-gradient(at bottom left, #2b86fd, transparent);
+    background-size: cover;
+    min-height: 100%
+}
+header > p , a {
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+}
+p {
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff, 
+                 0 0 40px #fff;
+    padding: 0 5vh;
+}
+nav > a {
+    justify-self: space-evenly;
+}
+
