@@ -2,27 +2,59 @@
     box-sizing: border-box;
 }
 body {
-    align-content: center;
+    
     background-image:
         radial-gradient(at top left, #000000, transparent),
         radial-gradient(at top right, #770b81, transparent),
-        radial-gradient(at bottom left, #0a030a, transparent);  
+        radial-gradient(at bottom left, #0a030a, transparent),
+        radial-gradient(at bottom right, #3183ee, transparent);
     background-size: cover;
-    
+}
+h1 , p , #button {
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+}
+h1 {
+    font-size: 4rem;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff, 
+                 0 0 40px #fff;
+}
+p {
+    font-size: 1.3rem;
+    margin-bottom: 10vh;
 }
 .row {
     display: flex;
     margin: 10vh 0;
-    
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }
 .column {
     flex: 50%;
 }
-.text {
-    text-align: center;
+#button {
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 6px 24px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .3s linear;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff, 
+                 0 0 40px #fff;
+    text-decoration: none;
+    padding: 5px;
+
 }
-.text > h1 {
-    
+#button:hover {
+    font-size: 2.3rem;
 }
 #vrwomen {
     width: 80%;
