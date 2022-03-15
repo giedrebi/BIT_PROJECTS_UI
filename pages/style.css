@@ -60,8 +60,20 @@ a.menu:active {
 }
 .row {
     display: flex;
+    text-align: center;
 }
 .row1 {
+    
+}
+.row2 {
     flex: 50%;
     flex-wrap: wrap;
+    
+}
+.row3 {
+    flex: 33%;
+}
+#represent_photo {
+    width: 70%;
+    text-align: center;
 }
