@@ -12,7 +12,9 @@ header {
     background-size: cover;
     min-height: 100%;
     position: sticky;
-    height: 20vh;
+    top: 0;
+    height: 15vh;
+    border-radius: 10px;
 }
 header > p , a {
     color: white;
@@ -22,18 +24,18 @@ header > p , a {
 }
 header > p {
     flex: 30%;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 0 5vh;
     animation-name: logo;
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 @keyframes logo {
-    0%   {text-shadow: 0 0 0 #fff; font-size: 1.5rem;}
-    25%  {text-shadow: 0 0 20px #fff; font-size: 2rem;}
-    50%  {text-shadow: 0 0 40px #fff; font-size: 2rem;}
-    75%  {text-shadow: 0 0 20px #fff; font-size: 2rem;}
-    100% {text-shadow: 0 0 0 #fff; font-size: 1.5rem;}
+    0%   {text-shadow: 0 0 0 #fff; font-size: 1.2rem;}
+    25%  {text-shadow: 0 0 20px #fff; font-size: 1.7rem;}
+    50%  {text-shadow: 0 0 40px #fff; font-size: 1.7rem;}
+    75%  {text-shadow: 0 0 20px #fff; font-size: 1.7rem;}
+    100% {text-shadow: 0 0 0 #fff; font-size: 1.2rem;}
     }
 header > nav {
     flex: 70%;
@@ -61,19 +63,67 @@ a.menu:active {
 .row {
     display: flex;
     text-align: center;
+    padding: 10vh 0;
 }
-.row1 {
-    
+.column1 > h1 , .column1 > p , .column1 > #button {
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+}
+.column1 > h1 {
+    font-size: 4rem;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff, 
+                 0 0 40px #fff;
+}
+.column1 > p {
+    font-size: 1.3rem;
+    margin-bottom: 10vh;
 }
 .row2 {
-    flex: 50%;
     flex-wrap: wrap;
-    
+    background-image:
+        radial-gradient(at top left, #000000, transparent),
+        radial-gradient(at top center, #ff26ff, transparent),
+        radial-gradient(at top right, #2b86fd, transparent),
+        radial-gradient(at bottom right, #67236d, transparent),
+        radial-gradient(at bottom left, #2b86fd, transparent);
+    background-size: cover;
+    border-radius: 20px;
 }
 .row3 {
     flex: 33%;
 }
+.column1 , .column2 {
+    flex: 50%;
+}
 #represent_photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 70%;
-    text-align: center;
+}
+#headset {
+    width: 80%;
+}
+#button {
+    background: rgba( 255, 255, 255, 0.45 );
+    box-shadow: 0 6px 24px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .3s linear;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff, 
+                 0 0 40px #fff;
+    text-decoration: none;
+    padding: 5px;
+}
+#button:hover {
+    font-size: 2.3rem;
+    padding: 10px;
 }
