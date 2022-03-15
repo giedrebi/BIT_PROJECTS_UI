@@ -4,13 +4,15 @@
 header {
     display: flex;
     background-image:
-        radial-gradient(at top left, #4d0064, transparent),
-        radial-gradient(at top right, #400846, transparent),
-        radial-gradient(at bottom right, #c037c0, transparent),
+        radial-gradient(at top left, #000000, transparent),
+        radial-gradient(at top center, #ff26ff, transparent),
+        radial-gradient(at top right, #2b86fd, transparent),
+        radial-gradient(at bottom right, #67236d, transparent),
         radial-gradient(at bottom left, #2b86fd, transparent);
     background-size: cover;
     min-height: 100%;
     position: sticky;
+    height: 20vh;
 }
 header > p , a {
     color: white;
@@ -19,15 +21,25 @@ header > p , a {
     letter-spacing: 7px;
 }
 header > p {
+    flex: 30%;
     font-size: 1.5rem;
-    text-shadow: 0 0 10px #fff,
-                 0 0 20px #fff, 
-                 0 0 40px #fff;
     padding: 0 5vh;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
+@keyframes logo {
+    0%   {text-shadow: 0 0 0 #fff; font-size: 1.5rem;}
+    25%  {text-shadow: 0 0 20px #fff; font-size: 2rem;}
+    50%  {text-shadow: 0 0 40px #fff; font-size: 2rem;}
+    75%  {text-shadow: 0 0 20px #fff; font-size: 2rem;}
+    100% {text-shadow: 0 0 0 #fff; font-size: 1.5rem;}
+    }
 header > nav {
+    flex: 70%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
 }
 a.menu:link, a.menu:visited {
     font-size: 1rem;
@@ -35,7 +47,7 @@ a.menu:link, a.menu:visited {
     transition: 1s;
 }
 a.menu:hover {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-decoration: none;
     text-shadow: 0 0 10px #fff,
                  0 0 20px #fff, 
