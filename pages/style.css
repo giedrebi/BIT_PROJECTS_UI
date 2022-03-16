@@ -105,7 +105,7 @@ a.menu:active {
                  0 0 20px #fff, 
                  0 0 40px #fff;
 }
-.column1 > p {
+.column1 > p , .column6 > p {
     font-size: 1.3rem;
     margin-bottom: 10vh;
 }
