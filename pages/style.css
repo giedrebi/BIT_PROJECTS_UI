@@ -43,22 +43,6 @@ header > nav {
     justify-content: space-evenly;
     align-items: center;
 }
-.column3 {
-    flex: 33%;
-}
-.circle_inside {
-    background: #fff;
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    margin: auto;
-    background: linear-gradient(
-        135deg,
-        rgba(0, 27, 180, 0.753) 0%,
-        rgba(89, 1, 189, 0.699) 42%,
-        rgb(0, 0, 0) 100%
-     );
-}
 a.menu:link, a.menu:visited {
     font-size: 1rem;
     text-decoration: none;
@@ -83,6 +67,42 @@ a.menu:active {
     align-items: center;
     vertical-align: middle;
 }
+.row2 , .row4 {
+    flex-wrap: wrap;
+    background-image:
+        radial-gradient(at top left, #000000, transparent),
+        radial-gradient(at top center, #ff26ff, transparent),
+        radial-gradient(at top right, #2b86fd, transparent),
+        radial-gradient(at bottom right, #67236d, transparent),
+        radial-gradient(at bottom left, #2b86fd, transparent);
+    background-size: cover;
+    border-radius: 20px;
+}
+.row4 {
+    height: 30vh;
+}
+.circle_inside {
+    background: #fff;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: auto;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 27, 180, 0.753) 0%,
+        rgba(89, 1, 189, 0.699) 42%,
+        rgb(0, 0, 0) 100%
+     );
+}
+.column1 , .column2 {
+    flex: 50%;
+}
+.column3 {
+    flex: 33%;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff, 
+                 0 0 40px #fff;
+}
 .column1 > h1 , .column1 > p , .column1 > #button {
     color: white;
     font-weight: bold;
@@ -98,28 +118,6 @@ a.menu:active {
 .column1 > p {
     font-size: 1.3rem;
     margin-bottom: 10vh;
-}
-.column1 , .column2 {
-    flex: 50%;
-}
-.row2 {
-    flex-wrap: wrap;
-    background-image:
-        radial-gradient(at top left, #000000, transparent),
-        radial-gradient(at top center, #ff26ff, transparent),
-        radial-gradient(at top right, #2b86fd, transparent),
-        radial-gradient(at bottom right, #67236d, transparent),
-        radial-gradient(at bottom left, #2b86fd, transparent);
-    background-size: cover;
-    border-radius: 20px;
-}
-.column3 {
-    text-shadow: 0 0 10px #fff,
-                 0 0 20px #fff, 
-                 0 0 40px #fff;
-}
-.row4 {
-    height: 30vh;
 }
 #represent_photo {
     display: block;
