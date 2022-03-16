@@ -99,13 +99,7 @@ a.menu:active {
                  0 0 20px #fff, 
                  0 0 40px #fff;
 }
-.column1 > h1 , .column1 > p , .column1 > #button {
-    color: white;
-    font-weight: bold;
-    font-family: monospace;
-    letter-spacing: 7px;
-}
-.column1 > h1 {
+.column1 > h1 , .column6 > h1 {
     font-size: 4rem;
     text-shadow: 0 0 10px #fff,
                  0 0 20px #fff, 
@@ -114,9 +108,6 @@ a.menu:active {
 .column1 > p {
     font-size: 1.3rem;
     margin-bottom: 10vh;
-}
-.column5 {
-    display: flex;
 }
 #represent_photo {
     display: block;
@@ -134,7 +125,7 @@ a.menu:active {
     -webkit-backdrop-filter: blur( 7px );
     border-radius: 10px;
     border: 2px solid rgba( 255, 255, 255, 0.18 );
-    font-size: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
     transition: .3s linear;
     text-shadow: 0 0 10px #fff,
@@ -144,6 +135,6 @@ a.menu:active {
     padding: 5px;
 }
 #button:hover {
-    font-size: 2.3rem;
+    font-size: 1.5rem;
     padding: 10px;
 }
