@@ -94,7 +94,7 @@ a.menu:active {
         rgb(0, 0, 0) 100%
      );
 }
-.column1 , .column2 {
+.column1 , .column2 , .olumn5 , .column6 {
     flex: 50%;
 }
 .column3 {
@@ -118,6 +118,10 @@ a.menu:active {
 .column1 > p {
     font-size: 1.3rem;
     margin-bottom: 10vh;
+}
+.column5 {
+    display: flex;
+    flex-wrap: wrap;
 }
 #represent_photo {
     display: block;
