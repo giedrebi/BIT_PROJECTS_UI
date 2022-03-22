@@ -63,10 +63,11 @@ a.menu:active {
 .row {
     display: flex;
     text-align: center;
-    padding: 10vh 0;
+    padding: 4rem 2em;
     align-items: center;
+    margin-top: 0.5rem;
 }
-.row2 , .row4 {
+.row2 , .row4 , .row5 {
     flex-wrap: wrap;
     background-image:
         radial-gradient(at top left, #000000, transparent),
@@ -76,6 +77,11 @@ a.menu:active {
         radial-gradient(at bottom left, #2b86fd, transparent);
     background-size: cover;
     border-radius: 20px;
+}
+.row5 {
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 1rem;
 }
 .circle_inside {
     background: #fff;
@@ -89,6 +95,11 @@ a.menu:active {
         rgba(89, 1, 189, 0.699) 42%,
         rgb(0, 0, 0) 100%
      );
+}
+.circle_inside > h1 {
+    margin: auto;
+    padding-top: 4rem;
+    width: 80%;
 }
 .column1 , .column2 , .column5 , .column6 {
     flex: 50%;
