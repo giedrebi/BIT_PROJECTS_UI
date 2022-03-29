@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -19,7 +21,7 @@ header {
 h1 , p , a {
     color: white;
     font-weight: bold;
-    font-family: monospace;
+    font-family: 'Space Grotesk', sans-serif;
     letter-spacing: 7px;
 }
 header > p {
@@ -40,6 +42,7 @@ header > p {
 header > nav {
     flex: 70%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -62,20 +65,23 @@ a.menu:active {
 }
 .row {
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     padding: 4rem 2em;
     align-items: center;
     margin-top: 0.5rem;
 }
+.row2 , .row4 , .row5 , .circle_inside {
+    background-image:
+    radial-gradient(at top left, #000000, transparent),
+    radial-gradient(at top center, #ff26ff, transparent),
+    radial-gradient(at top right, #2b86fd, transparent),
+    radial-gradient(at bottom right, #67236d, transparent),
+    radial-gradient(at bottom left, #2b86fd, transparent);
+    background-size: cover;
+}
 .row2 , .row4 , .row5 {
     flex-wrap: wrap;
-    background-image:
-        radial-gradient(at top left, #000000, transparent),
-        radial-gradient(at top center, #ff26ff, transparent),
-        radial-gradient(at top right, #2b86fd, transparent),
-        radial-gradient(at bottom right, #67236d, transparent),
-        radial-gradient(at bottom left, #2b86fd, transparent);
-    background-size: cover;
     border-radius: 20px;
 }
 .row5 {
@@ -84,17 +90,10 @@ a.menu:active {
     margin-top: 1rem;
 }
 .circle_inside {
-    background: #fff;
     width: 300px;
     height: 300px;
     border-radius: 100%;
     margin: auto;
-    background: linear-gradient(
-        135deg,
-        rgba(0, 27, 180, 0.753) 0%,
-        rgba(89, 1, 189, 0.699) 42%,
-        rgb(0, 0, 0) 100%
-     );
 }
 .circle_inside > h1 {
     margin: auto;
@@ -106,9 +105,8 @@ a.menu:active {
 }
 .column3 {
     flex: 33%;
-    text-shadow: 0 0 10px #fff,
-                 0 0 20px #fff, 
-                 0 0 40px #fff;
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
 }
 .column1 > h1 , .column6 > h1 {
     font-size: 4rem;
@@ -120,10 +118,19 @@ a.menu:active {
     font-size: 1.3rem;
     margin-bottom: 10vh;
 }
+.video {
+    text-align: center;
+    padding-top: -6rem;
+}
+.video > video {
+    width: 90%;
+}
 #represent_photo {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: -7.3rem;
+    margin-top: -4.5rem;
     width: 70%;
 }
 #headset {
@@ -148,4 +155,10 @@ a.menu:active {
 #button:hover {
     font-size: 1.5rem;
     padding: 10px;
+}
+#circle_text {
+    font-size: 1rem;
+    padding-top: 3rem;
+    padding-left: 0.5rem;
+    align-items: center;
 }
