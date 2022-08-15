@@ -63,6 +63,26 @@ a.menu:active {
     text-decoration: none;
     transition: 1s;
 }
+form {
+    padding: 20px 26px;
+    text-decoration: none;
+    width:50%;
+    text-align: center;
+    margin: auto;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+}
+fieldset {
+    border: 1px solid white;
+    border-radius: 20px;
+}
+#contacts {
+    margin: auto;
+    text-align: center;
+}
+.name {
+    font-size: xx-large;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
